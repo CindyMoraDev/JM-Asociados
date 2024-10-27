@@ -178,7 +178,69 @@ color: var(--blanco);
 color: var(--blanco);
 }
 
+.card-title{
+    margin-bottom: 20px;
+}
 
+
+.service-section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .service-section:last-child {
+    border-right: 0.5px solid var(--azul-gris);
+
+  }
+
+  .service-card {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 0.5px solid var(--azul-gris);
+    transition: background-color 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hace que todas las tarjetas tengan el mismo alto */
+  }
+
+
+
+  .service-card:hover {
+    background-color: #e9ecef;
+  }
+
+  .service-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-right: 10px; /* Espacio entre icono y título */
+  }
+
+  .service-card .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    min-width: 200px; /* Define un ancho mínimo para igualar el tamaño de los títulos */
+  }
+
+  .service-card .description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    flex-grow: 1; /* Expande la descripción para alinear todas las tarjetas al mismo tamaño */
+  }
+
+  .service-card .read-more {
+    display: none;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+
+  .service-card:hover .read-more {
+    display: inline-block;
+  }
 
 /* ============================================================================================================
 TESTIMONIOS
